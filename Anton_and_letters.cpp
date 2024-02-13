@@ -2,14 +2,17 @@
 using namespace std;
 int main()
 {
+    int n;
+    cin >> n;
     string s;
-    set <char> a;
-    getline(cin,s);
-    for(int i=0; i<s.length(); i++)
-    {
-        if(s[i]>='a' && s[i]<='z')
-            a.insert(s[i]);
-    }
-    cout<<a.size()<<endl;
+    for(int i=0;i<n;i++){
+    	cin >> s;
+    	if((s[0]=='y'||s[0]=='Y')&&(s[1]=='e'||s[1]=='E')&&(s[2]=='s'||s[2]=='S')){
+    		cout << "YES" << endl;
+		}
+		else{
+			cout << "NO" << endl;
+		}
+	}
     return 0;
 }
